@@ -31,6 +31,40 @@
     border-color: #a54343 !important;
 }
 
+/* Estilização refinada para o card de serviço */
+.servicos .card {
+    border: 1px solid #dee2e6 !important; /* Bordas finas e cinzas */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra bem leve */
+    transition: transform 0.3s ease;
+    margin: 0 auto; /* Centraliza o card se a coluna for maior */
+}
+
+
+
+.servicos .card img {
+    align-items: center;
+    width: auto;
+}
+
+.servicos .card-title {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.servicos .card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* zoomPortfólio ao passar o mouse */
+.portifolio img, .servicos .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portifolio img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
 
 .accordion-button:not(.collapsed) {
   background-color: #880015; 
@@ -50,7 +84,7 @@ footer{
 
 
 .social-icon {
-    background-color: #333; /* Cor escura do fundo do ícone */
+    background-color: #333; 
     color: white;
     padding: 12px;
     border-radius: 5px;
@@ -72,17 +106,6 @@ footer{
 
 .redes{
     justify-content: end ;
-}
-
-
-/* zoomPortfólio ao passar o mouse */
-.portifolio img, .servicos .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.portifolio img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 
