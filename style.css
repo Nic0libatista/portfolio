@@ -1,0 +1,100 @@
+.custom-nav {
+    background-color: #a54343 !important; /* Tom de vermelho da imagem */
+    padding: 15px 0;
+}
+
+.custom-nav .navbar-brand, .custom-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.custom-nav .nav-link:hover {
+    color: #dddddd !important;
+}
+
+.banner{
+    padding: 10%;
+    background-image: url(assets/banner.png);
+    background-size: cover;
+    color: white !important;
+    font-weight: bold;
+}
+
+.raposa{
+    display: none;
+}
+.sobre{
+    margin-top: 50px;
+}
+.sobre .border{
+    border-color: #a54343 !important;
+}
+
+
+.accordion-button:not(.collapsed) {
+  background-color: #880015; 
+  color: #fff;
+}
+
+.accordion-button::after {
+  filter: invert(0.3);
+}
+
+footer{
+    background-color: #a54343;
+    padding: 20px;
+    color: white !important;
+    text-transform: uppercase; 
+}
+
+
+.social-icon {
+    background-color: #333; /* Cor escura do fundo do ícone */
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+.social-icon:hover {
+    color: #ccc;
+    opacity: 0.9;
+}
+
+.direitosreservados{
+    background-color: black;
+    color: white;
+}
+
+.redes{
+    justify-content: end ;
+}
+
+@media only screen and (max-width: 987px) {
+.raposa{
+    display: block;
+}
+
+.sobre h2{
+    margin-top: 30px;
+}
+.portifolio h2{
+    margin-top: 5px;
+}
+
+.servicos .foto{
+    margin:10px;
+}
+
+.textosobre{
+    margin-top: 10px;
+}
+
+footer .redes{
+    justify-content: center;
+}
+}
