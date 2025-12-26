@@ -74,6 +74,36 @@ footer{
     justify-content: end ;
 }
 
+
+/* zoomPortfólio ao passar o mouse */
+.portifolio img, .servicos .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portifolio img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.btn-primary {
+    transition: all 0.3s ease;
+    border: none;
+    background-color: #a54343; 
+}
+
+.btn-primary:hover {
+    background-color: #880015;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(165, 67, 67, 0.4);
+}
+
+/* Evitar que os elementos "pisquem" antes da animação carregar */
+ .servicos, .portifolio, .banner .col-lg-6 {
+    visibility: hidden;
+}
+
+
 @media only screen and (max-width: 987px) {
 .raposa{
     display: block;
