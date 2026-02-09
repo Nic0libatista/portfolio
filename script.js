@@ -46,3 +46,8 @@ darkModeToggle.addEventListener('click', () => {
     }
 });
 
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    icon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+}
+
