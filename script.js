@@ -27,3 +27,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+const icon = darkModeToggle.querySelector('i');
+
+darkModeToggle.addEventListener('click', () => {
+    // Alterna a classe dark-mode
+    body.classList.toggle('dark-mode');
+    
+    // Altera o ícone entre lua e sol
+    if (body.classList.contains('dark-mode')) {
+        icon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+        localStorage.setItem('theme', 'dark'); // Salva a preferência
+    } else {
+        icon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
+        localStorage.setItem('theme', 'light');
+    }
+});
+

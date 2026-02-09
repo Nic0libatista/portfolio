@@ -31,12 +31,12 @@
     border-color: #a54343 !important;
 }
 
-/* Estilização refinada para o card de serviço */
+
 .servicos .card {
-    border: 1px solid #dee2e6 !important; /* Bordas finas e cinzas */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra bem leve */
+    border: 1px solid #dee2e6 !important; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
     transition: transform 0.3s ease;
-    margin: 0 auto; /* Centraliza o card se a coluna for maior */
+    margin: 0 auto; 
 }
 
 
@@ -56,7 +56,7 @@
     color: #666;
 }
 
-/* zoomPortfólio ao passar o mouse */
+/* zoom ao passar o mouse */
 .portifolio img, .servicos .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -104,6 +104,10 @@ footer{
     color: white;
 }
 
+.direitosreservados p{
+    margin-bottom: 0px;
+}
+
 .redes{
     justify-content: end ;
 }
@@ -126,10 +130,51 @@ footer{
     visibility: hidden;
 }
 
+/* MODO ESCURO */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode .card-title {
+    color: #ffffff !important;
+}
+
+/* Ajuste nos cards e seções */
+body.dark-mode .card, 
+body.dark-mode .accordion-item {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border-color: #333 !important;
+}
+
+/* Ajuste na Navbar e Footer no modo escuro */
+body.dark-mode .custom-nav, 
+body.dark-mode footer {
+    background-color: #000000 !important;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .nav-link {
+    color: #ffffff !important;
+}
+
+body.dark-mode .modoescuro{
+    border: yellow solid 1px !important;
+    color: yellow !important;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 987px) {
 .raposa{
-    display: block;
+    display: none;
 }
 
 .sobre h2{
